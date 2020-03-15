@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Router } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { ConnectedRouter } from "connected-react-router";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
@@ -20,7 +20,7 @@ store.dispatch(loadUser());
 export class Layout extends Component {
   render() {
     return (
-      <Router basename="/react-messenger-deploy">
+      <BrowserRouter basename="/react-messenger-deploy">
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
             <ConnectedRouter history={history}>
@@ -50,7 +50,7 @@ export class Layout extends Component {
             </ConnectedRouter>
           </PersistGate>
         </Provider>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
