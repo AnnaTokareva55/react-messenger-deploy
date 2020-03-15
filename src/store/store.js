@@ -29,12 +29,6 @@ const reducer = combineReducers({
   router: connectRouter(history)
 });
 
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__
-  ? window.__REDUX_DEVTOOLS_EXTENSION__()
-  : () => {};
-
-const logger = createLogger();
-
 export const initStore = (preloadedState = {}) => {
   const store = createStore(
     persistReducer(persistConfig, reducer),
@@ -42,13 +36,11 @@ export const initStore = (preloadedState = {}) => {
     compose(
       applyMiddleware(
         routerMiddleware(history),
-        logger,
         chatMiddleware,
         botMiddleware,
         apiMiddleware,
         thunk
-      ),
-      devTools
+      )
     )
   );
   const persistor = persistStore(store);
