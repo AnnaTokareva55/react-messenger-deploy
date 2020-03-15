@@ -1,0 +1,28 @@
+.Message {
+  position: relative;
+  background-color: lightskyblue;
+  padding: 5px;
+  border-radius: 5px;
+  width: 40%;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+}
+
+.Message:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Message--user {
+  align-self: flex-end;
+}
+
+.DeleteIcon {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  display: none;
+}
+
+.DeleteIcon--user {
+  display: block;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "React Chat",
+  "short_name": "Chat",
+  "icons": [
+    {
+      "src": "chat-icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "chat-icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "chat-icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "chat-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "chat-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "lang": "ru-RU",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "lightslategray",
+  "theme_color": "lightskyblue",
+  "gcm_sender_id": "1234567890"
+}

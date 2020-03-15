@@ -1,0 +1,18 @@
+.Popup {
+  width: calc(100%-20px);
+  padding: 10px;
+  background-color: lightgreen;
+  position: fixed;
+  bottom: 35px;
+  z-index: 10;
+}
+
+.CloseIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.PopupText {
+  font-size: 16px;
+}

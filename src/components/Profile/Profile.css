@@ -1,0 +1,12 @@
+.Profile {
+  background-color: lightgrey;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 650px) {
+  .Profile {
+    padding: 10px;
+  }
+}
